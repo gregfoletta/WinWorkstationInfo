@@ -14,14 +14,14 @@ This is repository contains a batch script and procedure for gathering informati
 1. Return to the user's application that is currently having performance issues.
 1. If the application is a web-browser based application, open the developer tools and switch the the network monitor tool.
     - Internet Explorer: Press F12 and select the 'Network' tab.
-1. Ensure the "Clear on navigate" button is selected so recording is restarted on every link click.
-1. Press 'F5' in the developer tools to start recording the session.
+    - Ensure the "Clear on navigate" button is selected so recording is restarted on every link click. ![Clear Navigate](images/clear_on_naviagte.gif)
+    - Press 'F5' in the developer tools to start recording the session.
 1. Recreate the performance issue.
 1. Save the session by pressing the save icon - suggest saving to the Desktop.
 1. Switch back to the batch script - this should be waiting with a prompt asking "Hit ENTER once app testing has completed ..."
     - Press enter to continue
 1. The batch script will create a '.cab' file on the user's Desktop.
-1. Upload the we browser trace XML and the CAB file to <insert SMB location here>
+1. Upload the we browser trace XML and the CAB file to [SMB location TBD]
 
 # Version History
 
