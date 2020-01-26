@@ -4,7 +4,7 @@ set O_DST=%USERPROFILE%\Desktop
 
 set O_PREFIX=%COMPUTERNAME%
 
-set O_DIR=%O_DST%\TS_Capure
+set O_DIR=%O_DST%\%COMPUTERNAME%
 
 set OUTPUT_FILE=%O_DIR%\%O_PREFIX%.txt
 set TYPEPERF_FILE=%O_DIR%\%O_PREFIX%.tp.tsv
@@ -49,13 +49,11 @@ set /p DUMMY=Hit ENTER once app testing has completed ...
 
 netsh trace stop
 
-dir %O_DIR% /s /b /a-d > %O_DST%\cab_files.txt
-makecab /D MaxDiskSize=0 /D CompressionType=MSZIP /D Cabinet=ON /D Compress=ON /D UniqueFiles=OFF /D DiskDirectoryTemplate=%O_DST% /D CabinetNameTemplate=%CAB_FILE%  /F cab_files.txt
+REM dir %O_DIR% /s /b /a-d > %O_DST%\cab_files.txt
+REM makecab /D MaxDiskSize=0 /D CompressionType=MSZIP /D Cabinet=ON /D Compress=ON /D UniqueFiles=OFF /D DiskDirectoryTemplate=%O_DST% /D CabinetNameTemplate=%CAB_FILE%  /F cab_files.txt
 
 set /p DUMMY=Information gathering complete, hit any key to exit.
 
 REM CLEANUP
 del typeperf.counters
-rmdir /q /s %O_DIR%
-del %O_DST%\cab_files.txt
 
