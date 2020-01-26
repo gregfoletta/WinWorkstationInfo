@@ -57,12 +57,3 @@ del typeperf.counters
 rmdir /q /s %O_DIR%
 del %O_DST%\cab_files.txt
 
-
-
-
-
-
-
-
-typeperf -si 1 -sc 10 -cf ps_counter.txt -f TSV -o %filename%.tp.tsv
-
