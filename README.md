@@ -8,7 +8,7 @@ This is repository contains a batch script and procedure for gathering informati
 
 # Procedure
 
-1. Download the current version of the batch file from [here](https://github.com/gregfoletta/WinWorkstationInfo/blob/master/gather_info.bat) and save to the user's desktop.
+1. Download the current version of the batch file from [here](https://raw.githubusercontent.com/gregfoletta/WinWorkstationInfo/master/gather_info.bat) and save to the user's desktop.
 1. Right click the batch file and select 'Run as administrator'.
 1. The batch script will start gathering information on the user's workstation. It can continue to run in the background.
 1. Return to the user's application that is currently having performance issues.
