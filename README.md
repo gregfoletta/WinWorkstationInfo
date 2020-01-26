@@ -21,7 +21,7 @@ This is repository contains a batch script and procedure for gathering informati
 1. Switch back to the batch script - this should be waiting with a prompt asking "Hit ENTER once app testing has completed ..."
     - Press enter to continue
 1. The batch script will create a '.cab' file on the user's Desktop.
-1. Upload the we browser trace XML and the CAB file to [SMB location TBD]
+1. Upload the we browser trace XML and the CAB file to the predetermined location.
 
 # Version History
 
