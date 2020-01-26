@@ -52,6 +52,8 @@ netsh trace stop
 dir %O_DIR% /s /b /a-d > %O_DST%\cab_files.txt
 makecab /D MaxDiskSize=0 /D CompressionType=MSZIP /D Cabinet=ON /D Compress=ON /D UniqueFiles=OFF /D DiskDirectoryTemplate=%O_DST% /D CabinetNameTemplate=%CAB_FILE%  /F cab_files.txt
 
+set /p DUMMY=Information gathering complete, hit any key to exit.
+
 REM CLEANUP
 del typeperf.counters
 rmdir /q /s %O_DIR%
